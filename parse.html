@@ -5,13 +5,12 @@
   <div class="form-group">
     <input type="file" id="file" name="file"  (change) ="uploadFile($event)" />
   </div>
-  <button class="btn btn-primary" (click)="add()">upload</button> <br><br>
   <span>Input File</span>
-  <textarea name="Input File" placeholder="Input File" id="" cols="20" rows="10" [(ngModel)]="data" class="form-control"></textarea>  <br />
+  <textarea name="Input File" placeholder="Input File" id="" cols="10" rows="10" [(ngModel)]="data" class="form-control"></textarea>  <br />
   <button class="btn btn-primary" (click)="get7segment()">
-    Parse
+    Submit
   </button>
   <br />  <br />
   <span>Output File</span>
-  <textarea name="Input File" placeholder="Input File" id="" cols="30" rows="10" [(ngModel)]="res" class="form-control"></textarea>
+  <textarea name="Input File" placeholder="Output File" id="" cols="10" rows="10" [(ngModel)]="res" class="form-control"></textarea>
 </div>
